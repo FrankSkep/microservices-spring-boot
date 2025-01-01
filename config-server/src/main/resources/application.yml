@@ -5,4 +5,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/FrankSkep/config-server
+          uri: https://github.com/FrankSkep/microservices-spring-boot
