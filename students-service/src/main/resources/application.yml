@@ -1,4 +1,8 @@
+server:
+  port: 8789
 spring:
+  application:
+    name: STUDENTS-SERVICE
   datasource:
     url: jdbc:mysql://localhost:3306/estudiantes_db
     username: root

@@ -1,15 +1,17 @@
+server:
+  port: 8898
 spring:
   cloud:
     gateway:
       routes:
-        - id: estudiantes-service
-          uri: lb://ESTUDIANTES-SERVICE
+        - id: students-service
+          uri: lb://students-service
           predicates:
-            - Path=/estudiantes/**
-        - id: cursos-service
-          uri: lb://CURSOS-SERVICE
-          predicates:
-            - Path=/cursos/**
+            - Path=/students/**
+        #- id: cursos-service
+          #uri: lb://CURSOS-SERVICE
+          #predicates:
+          #  - Path=/cursos/**
 eureka:
   client:
     service-url:

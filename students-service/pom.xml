@@ -22,7 +22,7 @@
         com.students
     </groupId>
     <artifactId>
-        students-service
+        students-microservice
     </artifactId>
     <version>
         0.0.1-SNAPSHOT
