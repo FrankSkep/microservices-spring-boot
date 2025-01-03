@@ -1,0 +1,22 @@
+server:
+  port: 8898
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: students-service
+          uri: lb://students-service
+          predicates:
+            - Path=/students/**
+        #- id: cursos-service
+          #uri: lb://CURSOS-SERVICE
+          #predicates:
+          #  - Path=/cursos/**
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost
