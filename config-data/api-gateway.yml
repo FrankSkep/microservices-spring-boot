@@ -3,6 +3,9 @@ server:
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: students-service
           uri: lb://students-service
