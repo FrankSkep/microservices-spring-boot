@@ -1,11 +1,12 @@
 server:
-  port: 8081
+  port: 8888
 spring:
   cloud:
     config:
       server:
-       git:
-         uri: https://github.com/FrankSkep/school-management-microservices
-         search-paths: config-data
+        git:
+          default-label: config-server
+          uri: https://github.com/FrankSkep/school-management-microservices
+          search-paths: config-data
   application:
     name: config-server
