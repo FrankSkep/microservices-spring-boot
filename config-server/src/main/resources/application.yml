@@ -5,6 +5,4 @@ spring:
     config:
       server:
         git:
-          default-label: config-server
-          uri: https://github.com/FrankSkep/school-management-microservices
-          search-paths: config-data
+          uri: https://github.com/FrankSkep/microservices-spring-boot
